@@ -327,7 +327,7 @@ public class LotteryApp extends JFrame {
                     volumeControl.setValue(dB);
                 }
 
-                // 🎵 無限ループ再生（途切れない）
+                //無限ループ再生（途切れない）
                 currentClip.loop(Clip.LOOP_CONTINUOUSLY);
                 currentClip.start();
 
@@ -391,5 +391,6 @@ class Item {
         this.count = count;
     }
 }
+
 
 
