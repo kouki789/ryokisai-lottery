@@ -33,9 +33,9 @@ public class LotteryApp extends JFrame {
     private Sheet historySheet = historyWorkbook.createSheet("抽選履歴");
     private int historyRowIndex = 0;
 
-    // 🎵 WAV用
+    // WAV用
     private Thread rollSoundThread;
-    private Clip currentClip; // ← Clipに変更
+    private Clip currentClip;
 
     public LotteryApp() {
         Row headerRow = historySheet.createRow(historyRowIndex++);
@@ -391,4 +391,5 @@ class Item {
         this.count = count;
     }
 }
+
 
