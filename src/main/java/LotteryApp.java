@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.util.*;
-import javax.sound.sampled.*; // ← 追加
+import javax.sound.sampled.*;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -245,7 +245,7 @@ public class LotteryApp extends JFrame {
         drawButton.setEnabled(false);
         resultLabel.setText("");
 
-        // 🎵 WAV再生に変更
+        //WAV再生に変更
         rollSoundThread = playLoopingSound("sounds/roll.wav");
 
         rouletteTimer = new javax.swing.Timer(100, e -> {
@@ -308,7 +308,7 @@ public class LotteryApp extends JFrame {
         }
     }
 
-    // 🎵 WAV版サウンド再生
+    //WAVサウンド再生
     private Thread playLoopingSound(String path) {
         Thread thread = new Thread(() -> {
             try {
@@ -391,3 +391,4 @@ class Item {
         this.count = count;
     }
 }
+
